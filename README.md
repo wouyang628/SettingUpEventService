@@ -1,6 +1,11 @@
 # fluentd_event_service
 
-
+install dependencies:
+```
+yum install openssl-devel libffi libffi-devel
+yum install python-pip python-devel gcc gcc-c++ make openssl-devel libffi-devel
+```   
+   
 follow this to setup the plugin for fluentd snmp trap
 https://github.com/Bigel0w/fluent-plugin-snmptrap
 
