@@ -74,4 +74,5 @@ to check the log:
 tail -f /var/log/td-agent/td-agent.log
 ```
 To register events in Appformix
+![](https://github.com/wouyang628/event_service_lab_setup/blob/master/images/headers.png)
 ![](https://github.com/wouyang628/event_service_lab_setup/blob/master/images/event_register.png)
