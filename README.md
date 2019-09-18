@@ -73,3 +73,5 @@ to check the log:
 ```
 tail -f /var/log/td-agent/td-agent.log
 ```
+To register events in Appformix
+
