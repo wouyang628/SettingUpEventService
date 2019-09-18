@@ -69,7 +69,7 @@ to start/stop fluentd service"
 /etc/init.d/td-agent start/stop
 ```
 
-to chech the log:
+to check the log:
 ```
 tail -f /var/log/td-agent/td-agent.log
 ```
