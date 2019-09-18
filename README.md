@@ -1,4 +1,4 @@
-# fluentd_event_service
+# Event service lab setup: Appformix, Healthbot, Fluentd, Event Service container
 
 install dependencies:
 ```
