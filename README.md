@@ -41,3 +41,35 @@ host 10.49.65.48 {
     inactive: match-strings RPM_TEST_RESULTS;
 }
 ```
+
+example of the fluentd config file:
+```
+[root@linux1 ~]# cat /etc/td-agent/td-agent.conf
+<source>
+  @type syslog
+  port 1514
+  tag system
+</source>
+
+<match system.**>
+  @type copy
+  <store>
+    @type http
+    endpoint_url http://10.49.64.178:10000
+    serializer json
+  </store>
+  <store>
+    @type stdout
+  </store>
+</match>
+```
+
+to start/stop fluentd service"
+```
+/etc/init.d/td-agent start/stop
+```
+
+to chech the log:
+```
+tail -f /var/log/td-agent/td-agent.log
+```
