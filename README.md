@@ -76,3 +76,8 @@ tail -f /var/log/td-agent/td-agent.log
 To register events in Appformix
 ![](https://github.com/wouyang628/event_service_lab_setup/blob/master/images/headers.png)
 ![](https://github.com/wouyang628/event_service_lab_setup/blob/master/images/event_register.png)
+
+
+# Notes
+1. Error "405 Method Not Allowed" when posting events to Appformix.  
+restart the docker restart appformix-controller and try. due to the license being applied after the controller container has started. The routes are conditional on the license.
