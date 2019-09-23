@@ -33,12 +33,32 @@ Done installing documentation for fluent-plugin-out-http after 0 seconds
 
 configure the router to send syslog to the fluentd server
 ```
+example:
 [edit system syslog]
 northstar@vmx101# show
 host 10.49.65.48 {
     daemon any;
     port 1514;
     inactive: match-strings RPM_TEST_RESULTS;
+}
+```
+
+configure the router to send snmp  trap to the fluentd server
+```
+example:
+northstar@vmx101# show snmp
+community public {
+    authorization read-only;
+}
+trap-group fluentd {
+    version v2;
+    destination-port 1062;
+    categories {
+        link;
+    }
+    targets {
+        10.49.65.48;
+    }
 }
 ```
 
