@@ -51,11 +51,16 @@ example of the fluentd config file:
   tag system
 </source>
 
-<match system.**>
+<source>
+  @type snmptrap
+  tag snmptrap
+</source>
+
+<match {system.**,snmptrap}>
   @type copy
   <store>
     @type http
-    endpoint_url http://10.49.64.178:10000
+    endpoint_url http://<<ip_address>>:10000
     serializer json
   </store>
   <store>
@@ -81,3 +86,5 @@ To register events in Appformix
 # Notes
 1. Error "405 Method Not Allowed" when posting events to Appformix.  
 restart the docker restart appformix-controller and try. due to the license being applied after the controller container has started. The routes are conditional on the license.
+
+2. when using "td-agent-gem install fluent-plugin-snmptrap", it does not work. The code in /opt/td-agent/embedded/lib/ruby/gems/2.4.0/gems/fluent-plugin-snmptrap-0.0.1/lib/fluent/plugin/in_snmptrap.rb looks different from the code in the orignal repo/plugin.  I have to manually copy fluent-plugin-snmptrap/lib/fluent/plugin/in_snmptrap.rb to /opt/td-agent/embedded/lib/ruby/gems/2.4.0/gems/fluent-plugin-snmptrap-0.0.1/lib/fluent/plugin/in_snmptrap.rb
