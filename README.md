@@ -77,6 +77,11 @@ to start/stop fluentd service"
 to check the log:
 ```
 tail -f /var/log/td-agent/td-agent.log
+2019-09-23 12:24:33.000000000 -0400 system.daemon.info: {"host":"vmx101","ident":"chassisd","pid":"14148","message":"JAM:PL: Registered attributes for c04 "}
+2019-09-23 12:24:33.000000000 -0400 system.daemon.info: {"host":"vmx101","ident":"chassisd","pid":"14148","message":"JAM:PL: Registered attributes for c05 "}
+2019-09-23 15:24:44.154827541 -0400 snmptrap: {"value":"\"#<SNMP::SNMPv2_Trap:0x00007f1e653b5b70 @request_id=1478493738, @error_status=0, @error_index=0, @varbind_list=[#<SNMP::VarBind:0x00007f1e6095a760 @name=[1.3.6.1.2.1.1.3.0], @value=#<SNMP::TimeTicks:0x00007f1e6095a7d8 @value=59451327>>, #<SNMP::VarBind:0x00007f1e60959c20 @name=[1.3.6.1.6.3.1.1.4.1.0], @value=[1.3.6.1.6.3.1.1.5.3]>, #<SNMP::VarBind:0x00007f1e60959388 @name=[1.3.6.1.2.1.2.2.1.1.552], @value=#<SNMP::Integer:0x00007f1e609593d8 @value=552>>, #<SNMP::VarBind:0x00007f1e60958b40 @name=[1.3.6.1.2.1.2.2.1.7.552], @value=#<SNMP::Integer:0x00007f1e60958b90 @value=2>>, #<SNMP::VarBind:0x00007f1e609582f8 @name=[1.3.6.1.2.1.2.2.1.8.552], @value=#<SNMP::Integer:0x00007f1e60958348 @value=2>>, #<SNMP::VarBind:0x00007f1e653b6188 @name=[1.3.6.1.2.1.31.1.1.1.1.552], @value=\\\"ge-0/0/5.0\\\">], @source_ip=\\\"10.49.66.3\\\">\"","tags":{"type":"alert","host":"10.49.66.3"}}
+2019-09-23 12:24:33.000000000 -0400 system.daemon.info: {"host":"vmx101","ident":"chassisd","pid":"14148","message":"JAM:PL: Registered attributes for c06 "}
+
 ```
 To register events in Appformix
 ![](https://github.com/wouyang628/event_service_lab_setup/blob/master/images/headers.png)
