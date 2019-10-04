@@ -30,6 +30,14 @@ Installing ri documentation for fluent-plugin-out-http-1.3.1
 Done installing documentation for fluent-plugin-out-http after 0 seconds
 1 gem installed
 ```
+
+configure the server to send syslog to the fluentd server
+```
+root@healthbot:/etc/rsyslog.d# cat 10-rsyslog.conf
+*.* @10.49.65.48:1514
+root@healthbot:/etc/rsyslog.d# service rsyslog restart
+```
+
 configure the router to send syslog to the fluentd server
 ```
 example:
