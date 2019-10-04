@@ -30,7 +30,6 @@ Installing ri documentation for fluent-plugin-out-http-1.3.1
 Done installing documentation for fluent-plugin-out-http after 0 seconds
 1 gem installed
 ```
-
 configure the router to send syslog to the fluentd server
 ```
 example:
@@ -61,7 +60,6 @@ trap-group fluentd {
     }
 }
 ```
-
 example of the fluentd config file:
 ```
 [root@linux1 ~]# cat /etc/td-agent/td-agent.conf
