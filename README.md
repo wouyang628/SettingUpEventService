@@ -114,6 +114,13 @@ To register events in Appformix
 ![](https://github.com/wouyang628/event_service_lab_setup/blob/master/images/event_register.png)
 
 
+enable openconfig on the juniper device
+```
+set system services extension-service request-response grpc clear-text port 32767
+set system services extension-service request-response grpc skip-authentication
+set system services extension-service notification allow-clients address 0.0.0.0/0
+```
+
 # Notes
 1. Error "405 Method Not Allowed" when posting events to Appformix.  
 restart the docker restart appformix-controller and try. due to the license being applied after the controller container has started. The routes are conditional on the license.
