@@ -133,16 +133,16 @@ converted data:{
 ```
 
 Check the Appformix GUI to see if the event has been received successfully:  
-![appformix_event_fluentd_server_syslog](/uploads/ccfddbe1f6e29a27ea544afd5a6feee9/appformix_event_fluentd_server_syslog.png)
+![appformix_event_fluentd_server_syslog](/images/appformix_event_fluentd_server_syslog.png)
 
 Make sure that the event and application is registered( this should be done during the Appformix installation). API can be used to manually register the application events.
 
 To check the already registered application and events. Use GET http://{{server}}:{{port}}/appformix/v1.0/application_registration  
-![QQ20191004-130112](/uploads/dcbb44eecd33cbc8818f7c3e28b07a01/QQ20191004-130112.png)
+![QQ20191004-130112](/images/postman_api_register.png)
 
 To register application and events.Use POST http://{{server}}:{{port}}/appformix/controller/v2.0/application_registration  
-![register1](/uploads/f198fbae5e74d54c13b037192d136598/register1.png)
-![register2](/uploads/2995c3d85053ce5882c4216b8343a62b/register2.png)
+![register1](/images/postman_api_register2.png)
+![register2](/images/postman_api_register3.png)
 
 
 
@@ -262,7 +262,7 @@ post succesful
 ```
 
 check Appformix GUI to see if the event is received and displayed:  
-![appformix-healthbot-event](/uploads/33b889151e2e31155f55e1699a8bbf5a/appformix-healthbot-event.png)
+![appformix-healthbot-event](/images/appformix-healthbot-event.png)
 
 
 ##  4. Application can send critical events as Application Events with Alarms and Subscriptions using AppFormix v2.0 APIs.
@@ -408,7 +408,7 @@ post succesful
 ```
 
 Check the Appformix GUI to see if the event has been received successfully:  
-![appformix_jitter](/uploads/8564dfc52f633092a977346047abb0af/appformix_jitter.png)
+![appformix_jitter](/images/appformix_jitter.png)
 
 
 
@@ -518,4 +518,4 @@ post succesful
 ```
 
 Check the Appformix GUI to see if the event has been received successfully:  
-![fluentdSNMPtrap](/uploads/57979dbef602f58affd7e0f7f77c5276/fluentdSNMPtrap.png)
+![fluentdSNMPtrap](/images/fluentdSNMPtrap.png)
