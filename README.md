@@ -1,16 +1,5 @@
-# Event service lab setup: Appformix, Healthbot, Fluentd, Event Service container
-
-install dependencies:
-```
-yum install openssl-devel libffi libffi-devel
-yum install python-pip python-devel gcc gcc-c++ make openssl-devel libffi-devel
-```   
-   
-follow this to setup the plugin for fluentd snmp trap
-https://github.com/Bigel0w/fluent-plugin-snmptrap
-
-follow this to setup the plugin for sending events out to http
-https://github.com/fluent-plugins-nursery/fluent-plugin-out-http
+# Overview
+The event service app can receive events from Healthbot, Fluentd and convert to Appformix format and send to Appformix server for events display and alarming. 
 
 # Scenarios
 ##  1. Application to Route Critical events into AppFormix Application Ingest packaged as a Docker container.
