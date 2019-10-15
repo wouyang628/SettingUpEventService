@@ -31,7 +31,7 @@ root@event-server:~/app# docker exec -it event-service /bin/sh
   
 ##  2. Source of Input messages supported in this Application are Syslog (from Fluentd Log Collector and Log Processor modules) and Healthbot Critical Events.  
 The event service app is able to receive parsed syslog and snmp trap events from Fluentd, events from Healthbot and convert the format and send to Appformix event API.  
-![flow_chart](/uploads/941629a1010168df8dcc4bde4b8c05a5/flow_chart.png)
+![flow_chart](/images/flow_chart.png)
 
 **example: server syslog -> Fluentd -> Event Service -> Appformix**  
 
