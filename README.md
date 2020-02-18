@@ -143,8 +143,7 @@ To check the already registered application and events. Use GET http://{{server}
 To register application and events.Use POST http://{{server}}:{{port}}/appformix/controller/v2.0/application_registration  
 ![register1](/images/postman_api_register2.png)
 ![register2](/images/postman_api_register3.png)
-
-
+![register3](/images/app_register2.png)
 
 ##  3. Application can send critical events as Application Events into AppFormix
 **example: Healthbot event -> Event Service -> Appformix**  
